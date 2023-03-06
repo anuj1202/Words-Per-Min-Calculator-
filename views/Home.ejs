@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="​Words&nbsp;Per-Minute. Calculator., Contact Us"
+    />
+    <meta name="description" content="" />
+    <title>Home</title>
+    <link rel="stylesheet" type='text/css' href="/public/css/nicepage.css" media="screen" />
+    <link rel="stylesheet" type='text/css' href="/public/css/Home.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script> -->
+    
+    <meta name="generator" content="Nicepage 5.6.2, nicepage.com" />
+    <meta name="referrer" content="origin" />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": ""
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="website" />
+    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="login" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="uemail">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="upassword">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/signup" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="uemail">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="upassword">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <section
+      class="u-clearfix u-image u-section-1"
+      id="carousel_e136"
+      data-image-width="1280"
+      data-image-height="853"
+    >
+    <% if (message) { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= message %> <a href="/">Go to Home</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <% } %>
+    <div  class="navbar">
+      <button>Home</button>
+      <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">
+        Login
+      </button>
+      <button type="button" data-toggle="modal" data-target="#exampleModal1" class="btn btn-primary">
+        Signup
+      </button>
+      <form action="logout" method="get">
+      <button>
+        Logout
+      </button>
+    </form>
+  </div>
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h1
+              class="u-custom-font u-font-playfair-display u-text u-text-body-alt-color u-text-1"
+            >
+              Words&nbsp;<br />Per-Minute. Calculator.
+            </h1>
+            <p class="u-text u-text-body-alt-color u-text-default u-text-2">
+              Want to know how to improve your typing speed? The first step
+              to&nbsp;learn to type fast&nbsp;and increase your typing speed is
+              to take a timed typing test!&nbsp;
+            </p>
+            <a
+              href="/word"
+              class="u-btn u-button-style u-btn-1"
+              >Click Here</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-container-align-center u-section-2"
+      id="carousel_4088"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div
+                class="u-container-layout u-similar-container u-container-layout-1"
+              >
+                <h5
+                  class="u-align-center u-text u-text-custom-color-1 u-text-default u-text-1"
+                >
+                  What is the average typing speed?
+                </h5>
+                <h6 class="u-align-center u-text u-text-default u-text-2">
+                  The average typing speed is around 40&nbsp;words per minute
+                  (wpm). If you want to be very productive, you should aim for a
+                  typing speed of 65 to 70 words per minute. It’s easy with the
+                  right technique!
+                </h6>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div
+                class="u-container-layout u-similar-container u-container-layout-2"
+              >
+                <h5
+                  class="u-align-center u-text u-text-custom-color-1 u-text-default u-text-3"
+                >
+                  How do you type faster?
+                </h5>
+                <h6 class="u-align-center u-text u-text-default u-text-4">
+                  Sample ​To type faster, you need to learn how to position
+                  yourself correctly, use all your fingers, hit the right keys
+                  without looking and avoid making mistakes. If you haven’t
+                  mastered any one of these things, you will benefit from a
+                  typing training program.
+                </h6>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div
+                class="u-container-layout u-similar-container u-container-layout-3"
+              >
+                <h5
+                  class="u-align-center u-text u-text-custom-color-1 u-text-default u-text-5"
+                >
+                  What is the best application for learning to type?
+                </h5>
+                <h6 class="u-align-center u-text u-text-default u-text-6">
+                  Sample ​Typing Pal’s training program covers every aspect of
+                  proper typing technique, offering a complete and customized
+                  program with hundreds of activities that are suitable for
+                  beginners and veterans alike. Our method has helped millions
+                  of users achieve their goals.
+                </h6>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div
+                class="u-container-layout u-similar-container u-container-layout-4"
+              >
+                <h5
+                  class="u-align-center u-text u-text-custom-color-1 u-text-default u-text-7"
+                >
+                  How long will learning to type take?
+                </h5>
+                <h6 class="u-align-center u-text u-text-default u-text-8">
+                  You will see improvement in a few weeks if you practice often,
+                  concentrate on accuracy over speed and adopt the proper
+                  technique. The hardest part is forgetting your bad habits,
+                  even if it means typing more slowly at first.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="carousel_9b5c">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <h2
+          class="u-align-center u-custom-font u-font-playfair-display u-text u-text-default u-text-1"
+        >
+          Contact Us
+        </h2>
+        <div class="u-form u-form-1">
+          <form
+            action="https://forms.nicepagesrv.com/v2/form/process"
+            class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form"
+            source="email"
+            name="form"
+            style="padding: 10px"
+          >
+            <div class="u-form-group u-form-name">
+              <label for="name-54fb" class="u-label">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                id="name-54fb"
+                name="name"
+                class="u-grey-5 u-input u-input-rectangle"
+                required=""
+              />
+            </div>
+            <div class="u-form-date u-form-group u-form-group-2">
+              <label for="date-21aa" class="u-label">E-mail</label>
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="example@gmail.com"
+                id="date-21aa"
+                name="email"
+                class="u-grey-5 u-input u-input-rectangle"
+                required=""
+                data-date-format="mm/dd/yyyy"
+              />
+            </div>
+            <div class="u-form-group u-form-message">
+              <label for="message-54fb" class="u-label">Message</label>
+              <textarea
+                placeholder="Enter your message"
+                rows="4"
+                cols="50"
+                id="message-54fb"
+                name="message"
+                class="u-grey-5 u-input u-input-rectangle"
+                required=""
+              ></textarea>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1"
+                >Submit</a
+              >
+              <input
+                type="submit"
+                value="submit"
+                class="u-form-control-hidden"
+              />
+            </div>
+            <div class="u-form-send-message u-form-send-success">
+              Thank you! Your message has been sent.
+            </div>
+            <div class="u-form-send-error u-form-send-message">
+              Unable to send your message. Please fix errors then try again.
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse" />
+            <input
+              type="hidden"
+              name="formServices"
+              value="373f6182478c06f85babc6d2c99c6b85"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
+      id="sec-9cf4"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">
+          Copyright ©&nbsp; 2023 Apex®. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
